@@ -12,6 +12,8 @@ body {
   display: -webkit-flex;
   display: flex;
   flex-flow: column wrap;
+  flex-flow: -webkit-column -webkit-wrap;
+  flex-flow: -moz-column -moz-wrap;
   align-content: center;
   align-items: center;
   justify-content: center;
