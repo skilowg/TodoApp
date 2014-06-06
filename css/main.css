@@ -74,8 +74,6 @@ ul {
 }
 
 li {
-  display: block;
-  overflow: hidden;
   margin: .5em;
   position: relative;
   padding: 1em;
