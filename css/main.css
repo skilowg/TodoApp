@@ -1,6 +1,8 @@
 body {
   background-color: #f1ede1;
   overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .flex {
@@ -89,6 +91,9 @@ li {
   font-size: .889em;
   color: #333;
   border: 1px solid #ebeaec;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 li:hover {
