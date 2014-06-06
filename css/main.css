@@ -81,7 +81,6 @@ li {
   list-style-type: none;
   width: 50%;
   height: 2em;
-  line-height: 120%;
   background-color: #fff;
   display: list-item;
   text-align: -webkit-match-parent;
@@ -90,7 +89,6 @@ li {
   font-size: .889em;
   color: #333;
   border: 1px solid #ebeaec;
-  word-wrap: break-word;
 }
 
 li:hover {
