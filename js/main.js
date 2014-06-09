@@ -23,6 +23,7 @@
         ev.preventDefault();
       }, false);
       function store (){
+        window.localStorage.setItem("myitems","");
         window.localStorage.myitems = list.innerHTML;
       }
       function retrieve() {
