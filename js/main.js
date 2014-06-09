@@ -30,3 +30,8 @@
       }
       retrieve();
     })();
+
+$(function() {
+    $( "#list" ).sortable();
+    $( "#list" ).disableSelection();
+  });
