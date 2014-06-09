@@ -23,10 +23,10 @@
         ev.preventDefault();
       }, false);
       function store (){
-        window.localStorage.setItem("myitems","");
         window.localStorage.myitems = list.innerHTML;
       }
       function retrieve() {
+        window.localStorage.setItem("myitems","");
         list.innerHTML = window.localStorage.myitems;
       }
       retrieve();
