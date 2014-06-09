@@ -2,6 +2,7 @@
       var item = document.querySelector('#item'),
           form = document.querySelector('form'),
           list = document.querySelector('#list');
+          window.localStorage.setItem("myitems","");
         form.addEventListener('submit', function(ev) {
           list.innerHTML += '<li>' + item.value + '</li>';
           store();
