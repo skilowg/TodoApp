@@ -30,7 +30,7 @@
         window.localStorage.setItem("myitems","");
         window.localStorage.myitems = list.innerHTML;
       }
-      function retrieve() {
+      function retrieve(){
         list.innerHTML = window.localStorage.myitems;
       }
       retrieve();
