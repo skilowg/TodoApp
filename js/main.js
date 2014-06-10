@@ -33,7 +33,7 @@
       function retrieve() {
         list.innerHTML = window.localStorage.myitems;
       }
-      retrieve();
+      if(window.localStorage > 0){ retrieve();}
     })();
 
 $(function() {
