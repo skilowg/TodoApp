@@ -32,8 +32,9 @@
       }
       function retrieve() {
         list.innerHTML = window.localStorage.myitems;
+        if(window.localStorage.myitmes > 0){ retrieve();}
       }
-      if(window.localStorage > 0){ retrieve();}
+      retrieve();
     })();
 
 $(function() {
