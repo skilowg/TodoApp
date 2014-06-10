@@ -3,7 +3,11 @@
           form = document.querySelector('form'),
           list = document.querySelector('#list');
         form.addEventListener('submit', function(ev) {
+          if (list.classList.contains ("new")) {
+          list.innerHTML += '<li class="new">' + item.value + '</li>';
+        } else {
           list.innerHTML += '<li>' + item.value + '</li>';
+        }
           store();
           ev.preventDefault();
         }, false);
@@ -36,3 +40,7 @@ $(function() {
     $( "#list" ).sortable();
     $( "#list" ).disableSelection();
   });
+
+$("button").click(function(){
+        $("*").toggleClass("new");
+      });
