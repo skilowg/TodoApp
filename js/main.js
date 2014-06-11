@@ -23,7 +23,8 @@
             } else {
               classList.add('checked');
             }
-        }
+          }
+          store();
         ev.preventDefault();
       }, false);
       function store (){
@@ -33,14 +34,18 @@
       function retrieve(){
         list.innerHTML = window.localStorage.myitems;
       }
-      retrieve();
-    })();
+      if(window.localStorage.length > 0){ retrieve();}
+      $(function() {
+        $( "#list" ).sortable({
+          stop: function stop (){
+            store();
+          }
+        });
+      $( "#list" ).disableSelection();
+      store();
+    });
 
-$(function() {
-    $( "#list" ).sortable();
-    $( "#list" ).disableSelection();
-  });
-
-$("button").click(function(){
-        $("*").toggleClass("new");
-      });
+    $("button").click(function(){
+      $("*").toggleClass("new");
+    });
+})();
