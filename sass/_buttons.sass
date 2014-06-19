@@ -1,0 +1,17 @@
+@import button
+
+label, input
+  display: block
+
+label
+  input
+    width: 20em
+    height: 2em
+    font-size: 1.25em
+
+.submit
+  @include button-rounded(13em, 3em, 0.75em, $color-secondary, 10%)
+  border: 0 !important
+  outline: none
+
+

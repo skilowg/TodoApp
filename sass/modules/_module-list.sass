@@ -1,0 +1,49 @@
+#list
+  .checked
+    color: #999
+    &:after
+      content: ' ✓'
+  .done
+    color: #999
+    text-decoration:line-through
+
+#item
+  border: 0
+  padding: 0 1em
+  width: 58%
+  height: 2.25em
+  margin: .5em 0
+  &:focus
+    outline: 0
+    background-color: #d4dec1
+    color: #14bbb1
+    border: 0
+
+ul
+  border-top: 1px solid #dedede
+  padding: 2em
+
+li
+  margin: .5em
+  position: relative
+  padding: 1em
+  box-shadow: 0 3px 0 #14bbb1
+  list-style-type: none
+  width: 90%
+  height: 1.5em
+  background-color: #fff
+  display: list-item
+  text-align: -webkit-match-parent
+  border-radius: .15em
+  font-family: sans-serif
+  font-size: .889em
+  color: #333
+  border: 1px solid #ebeaec
+  overflow: hidden
+  &:hover
+    box-shadow: 0 3px 0 #ffdc00
+  &:active
+    box-shadow: 0 3px 0 #d86969
+  @media screen and (min-width: 50em)
+    width: 40%
+
