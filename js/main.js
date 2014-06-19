@@ -3,7 +3,11 @@
           form = document.querySelector('form'),
           list = document.querySelector('#list');
         form.addEventListener('submit', function(ev) {
+          if (list.classList.contains ("new")) {
+          list.innerHTML += '<li class="new">' + item.value + '</li>';
+        } else {
           list.innerHTML += '<li>' + item.value + '</li>';
+        }
           store();
           ev.preventDefault();
         }, false);
@@ -19,14 +23,29 @@
             } else {
               classList.add('checked');
             }
-        }
+          }
+          store();
         ev.preventDefault();
       }, false);
       function store (){
+        window.localStorage.setItem("myitems","");
         window.localStorage.myitems = list.innerHTML;
       }
-      function retrieve() {
+      function retrieve(){
         list.innerHTML = window.localStorage.myitems;
       }
-      retrieve();
-    })();
+      if(window.localStorage.length > 0){ retrieve();}
+      $(function() {
+        $( "#list" ).sortable({
+          stop: function stop (){
+            store();
+          }
+        });
+      $( "#list" ).disableSelection();
+      store();
+    });
+
+    $("button").click(function(){
+      $("*").toggleClass("new");
+    });
+})();

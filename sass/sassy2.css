@@ -1,6 +1,6 @@
-body {
-  background-color: #f1ede1;
-}
+@charset "UTF-8";
+body.new {
+  background-color: #4b5764; }
 
 .flex {
   display: -webkit-box;
@@ -30,50 +30,38 @@ body {
   -moz-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
-  align-items: center;
-}
+  align-items: center; }
 
 .space {
-  margin: .5em 0;
-}
+  margin: 0.5em 0; }
 
 #list .checked {
-  color:#999;
-}
-
-#list .checked::after {
-  content: ' ✓'
-}
-
+  color: #999999; }
+  #list .checked:after {
+    content: " ✓"; }
 #list .done {
-  color: #999;
-  text-decoration:line-through;
-}
+  color: #999999;
+  text-decoration: line-through; }
 
 #item {
   border: 0;
   padding: 0 1em;
   width: 58%;
   height: 2.25em;
-  margin: .5em 0;
-}
+  margin: 0.5em 0; }
+  #item:focus {
+    outline: 0;
+    background-color: #d4dec1;
+    color: #14bbb1;
+    border: 0; }
 
-#item:focus {
-  outline: 0;
-  background-color: #d4dec1;
-  color: #14bbb1;
-  border: 0;
-}
+label, input {
+  display: block; }
 
 label input {
   width: 20em;
   height: 2em;
-  font-size: 1.25em;
-}
-
-label, input {
-  display: block;
-}
+  font-size: 1.25em; }
 
 h1 {
   width: 13em;
@@ -83,44 +71,41 @@ h1 {
   text-transform: uppercase;
   font-family: sans-serif;
   vertical-align: middle;
-  color: #fff;
-  border-radius: .25em
-}
+  color: white;
+  border-radius: 0.25em; }
 
 ul {
   border-top: 1px solid #dedede;
   width: 70%;
-  padding: 2em;
-}
+  padding: 2em; }
 
-li {
-  margin: .5em;
+li.new {
+  margin: 0.5em;
   position: relative;
   padding: 1em;
-  box-shadow: 0 3px 0 #14bbb1;
+  box-shadow: 0 3px 0 #b094e2;
   list-style-type: none;
   width: 50%;
   height: 1.5em;
-  background-color: #fff;
+  background-color: white;
   display: list-item;
   text-align: -webkit-match-parent;
-  border-radius: .15em;
+  border-radius: 0.15em;
   font-family: sans-serif;
-  font-size: .889em;
-  color: #333;
+  font-size: 0.889em;
+  color: #333333;
   border: 1px solid #ebeaec;
-  overflow: hidden;
-}
+  overflow: hidden; }
+  li.new:hover {
+    box-shadow: 0 3px 0 #f6925a; }
+  li.new:active {
+    box-shadow: 0 3px 0 #d86969; }
 
-li:hover {
-  box-shadow: 0 3px 0 #ffdc00;
-}
-
-.submit {
+.submit.new {
   margin: 1.5em 0;
-  -webkit-border-radius: .75em;
-  -moz-border-radius: .75em;
-  border-radius: .75em;
+  -webkit-border-radius: 0.75em;
+  -moz-border-radius: 0.75em;
+  border-radius: 0.75em;
   width: 13em;
   height: 3em;
   box-shadow: 0em;
@@ -129,9 +114,23 @@ li:hover {
   border: 0;
   font-size: 1em;
   text-transform: Uppercase;
-  outline: none;
-}
+  outline: none; }
+  .submit.new:hover {
+    background-color: #1b8e87; }
 
-.submit:hover {
-  background-color: #1b8e87;
-}
+#toggler {
+  border: 0em;
+  font-size: 0.558em;
+  background: transparent;
+  text-transform: uppercase;
+  -webkit-border-radius: 0.75em;
+  -moz-border-radius: 0.75em;
+  border-radius: 0.75em;
+  border: 1px solid #8ca2ad;
+  color: #8ca2ad;
+  padding: 0.5em; }
+  #toggler:hover {
+    background-color: #8ca2ad;
+    color: white; }
+  #toggler:focus {
+    outline: 0; }
