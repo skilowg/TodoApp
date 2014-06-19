@@ -10,18 +10,8 @@ label
     font-size: 1.25em
 
 .submit
-  margin: 1.5em 0
-  -webkit-border-radius: .75em
-  -moz-border-radius: .75em
-  border-radius: .75em
-  width: 13em
-  height: 3em
-  box-shadow: 0em
-  color: white
-  background-color: #14bbb1
-  border: 0
-  font-size: 1em
-  text-transform: Uppercase
+  @include button-rounded(13em, 3em, 0.75em, $color-secondary, 10%)
+  border: 0 !important
   outline: none
-  &:hover
-    background-color: #1b8e87
+
+

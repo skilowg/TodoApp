@@ -50,8 +50,4 @@
     $("#list").disableSelection();
     store();
   });
-
-  $("button").click(function() {
-    $("*").toggleClass("new");
-  });
 })();
