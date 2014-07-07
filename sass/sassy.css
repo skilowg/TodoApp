@@ -40,7 +40,8 @@ body {
   #list .checked:after {
     content: " ✓"; }
 #list .done {
-  color: #999999; }
+  color: #999999;
+  text-decoration: line-through; }
 
 #item {
   border: 0;
@@ -116,3 +117,42 @@ li {
   outline: none; }
   .submit:hover {
     background-color: #1b8e87; }
+
+@media (max-width: 640px) {
+  li {
+    margin: 0.5em;
+    position: relative;
+    padding: 1em;
+    box-shadow: 0 3px 0 #14bbb1;
+    list-style-type: none;
+    width: 80%;
+    height: 1.5em;
+    background-color: white;
+    display: list-item;
+    text-align: -webkit-match-parent;
+    border-radius: 0.15em;
+    font-family: sans-serif;
+    font-size: 0.889em;
+    color: #333333;
+    border: 1px solid #ebeaec;
+    overflow: hidden; }
+    li:hover {
+      box-shadow: 0 3px 0 #ffdc00; }
+    li:active {
+      box-shadow: 0 3px 0 #d86969; }
+
+  label input {
+    width: 11em;
+    height: 2em;
+    font-size: 1.25em; }
+
+  h1 {
+    width: 11em;
+    line-height: 2.25em;
+    background-color: #7bccf9;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    vertical-align: middle;
+    color: white;
+    border-radius: 0.25em; } }
