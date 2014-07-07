@@ -40,6 +40,23 @@ li.new {
   .submit.new:hover {
     background-color: #1b8e87; }
 
+#toggler {
+  border: 0em;
+  font-size: 0.558em;
+  background: transparent;
+  text-transform: uppercase;
+  -webkit-border-radius: 0.75em;
+  -moz-border-radius: 0.75em;
+  border-radius: 0.75em;
+  border: 1px solid #8ca2ad;
+  color: #8ca2ad;
+  padding: 0.5em; }
+  #toggler:hover {
+    background-color: #8ca2ad;
+    color: white; }
+  #toggler:focus {
+    outline: 0; }
+
 @media (max-width: 640px) {
   li.new {
     margin: 0.5em;
